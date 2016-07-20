@@ -1,0 +1,76 @@
+== README
+
+== Tutorial para preparar ambiente de produção
+
+
+
+1) Preparando Ambiente (Banco e Aplicação conjugados)
+
+Debian 8.3
+1 Vcpu
+1GB ram
+20GB HD
+
+rbenv
+ruby 2.2.3
+mongo
+Nginx + Unicorn
+Mina
+
+
+== Levantando Serviço
+
+== Deploy e Integração Contínua
+
+== DONE
+
+* Separar (ATA de Contrato) Medicão de Ordem de Fornecimento [Done]
+* Separar Atas e Contratos no Email (Tirar Data de Competência da Ordem de Serviços) [Done]
+* Acertar permissão do Atributo nome no formulágio de Registro Externo [Done]
+* Inserção de Hsitórico (https://github.com/aq1018/mongoid-history)
+* Adicionado validação de unicidade de contratos para evitar repetições, ele leva me conta
+o tipo de instrumento antes de avaliar.
+* Colocar minimo de css no email. Roadie Gem ou
+* Incluir Trackable em todos modelos (https://github.com/rs-pro/mongoid-audit)
+* Trocar Senha e Esquecer Senha [https://github.com/cec/rails_admin_change_password]
+* condicionantes para contrato vigente ou não (Alterar informações)
+* Separar na tela de OS e Medicao só o que é ata e o que é contrato.
+* Acertar datas para xx/xx/xxxx
+* Acertar Título - Sistema de informações contratuais
+* Acertar o Edit, show Money value em todos seguindo padrão do contrcats
+
+
+
+
+
+== TODO
+* email de cadatro como Fiscal na plataforma com link de confirmação (https://www.youtube.com/watch?v=EycP9L_x5rE)
+* Alerta para inserir valor das notas + Lógica de Email
+* Alerta para vigência contratual + Lógica de Email
+* Logica justificativa de avaliação obrigatrio caso insatisfatório (http://stackoverflow.com/questions/13750436/rails-validating-a-field-is-present-only-if-another-is-present)
+* Criar Saldo Residual
+* Acertar Permissão de cadatro e alteração de senhas no Rails Admin
+(incluir link e permissõa pros usuários alterarem as própria informações.)
+* Terminar o map reduce dos relatorios
+* Relatorios analiticos
+* Trocar report por kpi (hj temos inicadores e não )
+* Traduzir os textos debaixo dos campos de help
+* Importar todos usuários
+
+== Melhorias
+
+* Adicionar Rating System no Fornecedor (https://github.com/keitoaino/rails_admin_rate_field)
+no fim no encerramento do contrato
+* Relatório em PDF (https://github.com/CruxConsulting/rails_admin_show_pdf)
+* Ferramentas de admin (https://github.com/astrails/rails_admin_impersonate)
+* Criar Tags nos Contratos (https://github.com/kryzhovnik/rails_admin_tag_list)
+* Incluir chnce de vincular accountbility direto no modelo do usuário (se der pra ele não editar)
+** Super Admin pode editar todos campos pra corrigir falhas.
+
+
+== importar lista de usuários via console
+
+User.create!([
+  {email: "necl@gmail.co", password: "contratos", password_confirmation: "contratos", role: 'NECL' },
+  {email: "fiscal@gmail.com", password: "contratos", password_confirmation: "contratos", role: 'Fiscal' }
+])

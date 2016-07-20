@@ -1,0 +1,244 @@
+pt-BR:
+  views:
+  admin:
+    settings:
+      label: Configurações
+    home:
+      name: Home
+    pagination:
+      previous: "&laquo; Anterior"
+      next: "Próximo &raquo;"
+      truncate: "…"
+    misc:
+      search: "Procurar"
+      filter: "Filtrar"
+      refresh: "Atualizar"
+      show_all: "Mostrar tudo"
+      add_filter: "Novo Filtro"
+      bulk_menu_title: "Itens selecionados"
+      remove: "Remover"
+      add_new: "Criar Novo"
+      chosen: "%{name} escolhido"
+      chose_all: "Escolher tudo"
+      clear_all: "Limpar tudo"
+      up: "Cima"
+      down: "Baixo"
+      navigation: "Navegação"
+      log_out: "Terminar Sessão"
+      ago: "atrás"
+    flash:
+      successful: "%{name} %{action} com sucesso"
+      error: "%{name} %{action} sem sucesso"
+      noaction: "Nenhuma ação executada"
+      model_not_found: "Modelo '%{model}' não encontrado "
+      object_not_found: "%{model} com identificador '%{id}' não encontrado"
+    table_headers:
+      model_name: "Nome do modelo"
+      last_used: "Última vez usado em"
+      records: "Registros"
+      username: "Usuário"
+      changes: "Alterações"
+      created_at: "Data/Hora"
+      item: "Item"
+      message: "Mensagem"
+    actions:
+      dashboard:
+        title: "Dashboard"
+        menu: "Dashboard"
+        breadcrumb: "Dashboard"
+      index:
+        title: "Relação de %{model_label_plural}"
+        menu: "Relação"
+        breadcrumb: "%{model_label_plural}"
+      show:
+        title: "Detalhes para %{model_label} '%{object_label}'"
+        menu: "Mostrar"
+        breadcrumb: "%{object_label}"
+      show_in_app:
+        menu: "Mostrar na aplicação"
+      new:
+        title: "Novo %{model_label}"
+        menu: "Criar novo"
+        breadcrumb: "Novo"
+        link: "Criar um novo %{model_label}"
+        done: "criado"
+      edit:
+        title: "Editar %{model_label} '%{object_label}'"
+        menu: "Editar"
+        breadcrumb: "Editar"
+        link: "Editar este %{model_label}"
+        done: "atualizado"
+      delete:
+        title: "Remover %{model_label} '%{object_label}'"
+        menu: "Remover"
+        breadcrumb: "Remover"
+        link: "Remover '%{object_label}'"
+        done: "removido"
+      bulk_delete:
+        title: "Remover %{model_label_plural}"
+        menu: "Remover vários"
+        breadcrumb: "Remover vários"
+        bulk_link: "Remover selecionados %{model_label_plural}"
+      export:
+        title: "Exportar %{model_label}"
+        menu: "Exportar"
+        breadcrumb: "Exportar"
+        link: "Exportar %{model_label_plural} encontrados"
+        bulk_link: "Exportar %{model_label_plural} selecionados"
+        done: "exportados"
+      import:
+        title: "Importar %{model_label}"
+        menu: "Importar"
+        breadcrumb: "Importar"
+        link: "Importar %{model_label_plural} encontrados"
+        bulk_link: "Importar %{model_label_plural} selecionados"
+        done: "Importados"
+      history_index:
+        title: "Histórico para %{model_label_plural}"
+        menu: "Histórico"
+        breadcrumb: "Histórico"
+      history_show:
+        title: "Histórico para %{model_label} '%{object_label}'"
+        menu: "Histórico"
+        breadcrumb: "Histórico"
+      change_password:
+        title: "Trocar a Senha para '%{object_label}'"
+        menu: "Trocar Senha"
+        breadcrumb: "Trocar Senha"
+    form:
+      cancel: "Cancelar"
+      basic_info: "Informação Básica"
+      required: "Obrigatórios"
+      optional: "Opcional"
+      one_char: "caracter"
+      char_length_up_to: "comprimento até"
+      char_length_of: "comprimento de"
+      save: "Gravar"
+      save_and_add_another: "Gravar e criar outro"
+      save_and_edit: "Gravar e editar"
+      all_of_the_following_related_items_will_be_deleted: "? Os seguintes item serão apagados ou deixados orfãos:"
+      are_you_sure_you_want_to_delete_the_object: "Tem a certeza que quer apagar este %{model_name}"
+      confirmation: "Sim, tenho a certeza"
+      delete_confirmation: "Confirmar apagar"
+      bulk_delete: "Os seguintes objetos serão apagados, o que pode apagar ou deixar orfãos as dependências relacionadas"
+      new_model: "Novo %{name}"
+    export:
+      confirmation: "Exportar para %{name}"
+      select: "Selecionar campos para exportar"
+      fields_from: "Campos de %{name}"
+      fields_from_associated: "Campos associados com %{name}"
+      display: "Mostrar %{name}: %{type}"
+      options_for: "Opções para %{name}"
+      empty_value_for_associated_objects: "<vazio>"
+      click_to_reverse_selection: 'Click para inverter selecção'
+      csv:
+        header_for_root_methods: "%{name}" # 'model' is available
+        header_for_association_methods: "%{name} [%{association}]"
+        encoding_to: "Codificar para"
+        encoding_to_help: "Escolha a codificação. Deixe em branco para manter a codificação original: (%{name})"
+        skip_header: "Sem cabeçalho"
+        skip_header_help: "Não gerar cabeçalhos para (Campos sem cabeçalho)"
+        default_col_sep: ","
+        col_sep: "Separador de colunas"
+        col_sep_help: "Deixar em branco para usar omissão ('%{value}')" # value is default_col_sep
+    help:
+      amendment:
+        name: Número do Aditivo
+        amendment_type: Tipo do Aditivo
+        publication_date: Data de Publicação
+        activity: Atividade
+        expense_item: Item de Despesa
+        account_source: Fonte de Despesa
+        object: Objeto
+        process_number: Número do Processo
+        amendment_value: Valor do Aditivo
+        start_date: Início da Vigência
+        finish_date: Fim da Vigência
+        contract: Contrato
+        observation: Observações
+      addition:
+        name: Número do Apostilamento
+        object: Objeto
+        description: Descrição
+        adjustment_percentage: Percentual de Reajuste
+        start_date: Data de Início do Reajuste
+        contract: Contrato
+        adjustment_total_value: Valor Total do Reajuste
+      closure:
+          name: Documento Identificação
+          closure_type: Tipo de Encerramento
+          closure_date: Data de Encerramento
+          contractual_balance: Saldo Residual
+          contract: Contrato
+      fine:
+          name: Número da Penalidade
+          fine_type: Tipo de Sanção
+          execution_date: Data de Sanção
+          justification: Motivo
+          process_number: Número do Processo
+          contract: Contrato
+      notification:
+          name: Número da Notificação
+          justification: Justificativa
+          process_number: Número do Processo
+          contract: Contrato
+      reratification:
+          name: Número da notificação
+          object: Objeto
+          publication_date: Data de Publicação
+          sign_date: Data de Assinatura
+          contract: Contrato
+      termination:
+          name: Número da Rescisão
+          justification: Motivo
+          process_number: Número do Processo
+          publication_date: Data de Publicação
+          contract: Contrato
+      invoice:
+          invoice_type: Informe se é Medição ou Ordem de Serviço
+          name: Nome
+          value: Valor
+          emission_date: Emissão
+          expiration_date: Vencimento
+          status: Liquidada?
+          comments: Comentários
+          contract: Contrato
+          rating: Avaliação da Execução do Contrato
+      accountability:
+          ug: Unidade Gestora
+          sector: Gerência
+          accountability_type: Atribuição
+          contract: Contratos
+          user: Servidor
+          document_type: Tipo de Documento
+          lore_date: Data de Ciência
+          supervisor_change: Observações
+          active: Fiscal Vigente
+      budget:
+          name: Número do Empenho
+          date: Data
+          value: Valor (R$)
+      contract:
+          contract_model: Modalidade de Licitação
+          name: Número do Contrato
+          sign_date: Data de Assinatura
+          publication_date: Data de Publicação
+          activity: Atividade
+          expense_item: item de Despesa
+          account_source: Fonte de Despesa
+          object: Objeto
+          requesting: Setor Solicitante
+          process_number: Número do Processo
+          start_value: Valor Inicial
+          continuum_service: Selecione caso serviço contínuo
+          start_date: Início da Vigência
+          finish_date: Fim da Vigência
+          observation: Observações
+          vendor: Fornecedor
+          contract: Contrato
+      vendor:
+          name: Nome
+          cnpj: CNPJ
+          invoices: Notas Fiscais
+          contracts: Contratos
+          warning: Alerta

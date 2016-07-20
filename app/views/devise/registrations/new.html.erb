@@ -1,0 +1,34 @@
+
+<div class="border-form-div">
+<h2>Registrar</h2>
+<br>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), :html => {class:"form-signin"}) do |f| %>
+  <%= devise_error_messages! %>
+    <h2 class="form-signin-heading">Registre-se</h2><br />
+    <p class="form">Seu cadatro está sujeito a aprovação do Setor de Contratos. Qualquer dúvida entre em contato com NECC </p>
+    <%= f.label :name, class: "sr-only" %>
+    <%= f.text_field :name, autofocus: true, placeholder: "Nome", class: "form-control" %>
+
+    <%= f.label :functional_id, class: "sr-only" %>
+    <%= f.text_field :functional_id, autofocus: false, placeholder: "Matrícula", class: "form-control" %>
+
+    <%= f.label :job_role, class: "sr-only" %>
+    <%= f.text_field :job_role, autofocus: false, placeholder: "Cargo", class: "form-control" %>
+
+    <%= f.label :telphone, class: "sr-only" %>
+    <%= f.text_field :telphone, autofocus: false, placeholder: "Telefone", class: "form-control" %>
+
+    <%= f.label :email, class: "sr-only" %>
+    <%= f.email_field :email, autofocus: false, placeholder: "Email", class: "form-control" %>
+
+    <%= f.label :password, class: "sr-only"%><br />
+
+    <%= f.password_field :password, autocomplete: "off", placeholder: "Senha",  class: "form-control"  %>
+
+    <%= f.label :password_confirmation, class: "sr-only"%>
+    <%= f.password_field :password_confirmation, placeholder: "Confirme sua Senha", autocomplete: "off", class: "form-control"  %>
+    </br>
+    <%= f.submit "Registrar", class: "btn btn-lg btn-primary btn-block" %>
+
+<% end %>
+</div>

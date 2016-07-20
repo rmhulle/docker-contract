@@ -1,0 +1,208 @@
+pt-BR:
+  mongoid:
+    attributes:
+      user:
+        name: Nome
+        functional_id: Matricula
+        job_role: Cargo
+        telphone: Telefone
+        role: Papel
+        sign_in_count: Quantidades de Acesso
+        current_sign_in_at: Acesso atual
+        last_sign_in_at: Ultimo Acesso em
+        current_sign_in_ip: IP da Sessão Atual
+        last_sign_in_ip: IP da Sessão anterior
+      amendment:
+        name: Número do Aditivo
+        amendment_type: Tipo do Aditivo
+        publication_date: Data de Publicação
+        activity: Atividade
+        expense_item: Natureza de Despesa
+        federal_account_source: Fonte de Despesa (Federal)
+        state_account_source: Fonte de Despesa (Estadual)
+        other_account_source: Fonte de Despesa (Superavit)
+        object: Objeto
+        process_number: Número do Processo
+        amendment_value: Valor do Aditivo
+        start_date: Início da Vigência
+        finish_date: Fim da Vigência
+        contract: Contrato
+        observation: Observações
+      addition:
+        name: Apostilamento
+        object: Objeto
+        description: Descrição
+        adjustment_percentage: Percentual de Reajuste
+        start_date: Início do Reajuste
+        contract: Contrato
+        adjustment_total_value: Valor Total do Reajuste
+      closure:
+        name: Documento Identificação
+        closure_type: Tipo de Encerramento
+        closure_date: Data de Encerramento
+        contractual_balance: Saldo Residual
+        contract: Contrato
+      fine:
+        name: Número da Penalidade
+        fine_type: Tipo de Sanção
+        execution_date: Data de Sanção
+        justification: Motivo
+        process_number: Número do Processo
+        contract: Contrato
+      notification:
+        name: Número da Notificação
+        justification: Justificativa
+        process_number: Número do Processo
+        contract: Contrato
+      reratification:
+        name: Número da notificação
+        object: Objeto
+        publication_date: Data de Publicação
+        sign_date: Data de Assinatura
+        contract: Contrato
+      termination:
+        name: Número da Rescisão
+        justification: Motivo
+        process_number: Número do Processo
+        publication_date: Data de Publicação
+        contract: Contrato
+      invoice:
+        invoice_type: Tipo de Documento
+        competency_date: Data de Competência
+        name: Identificação
+        value: Valor Global
+        emission_date: Data de Emissão
+        expiration_date: Data de Entrega
+        execution_date: Data de Execução
+        process_number: Número do Processo
+        comments: Observações
+        rating: Avaliação
+        rating_justification: Justificativa
+        contract: Contrato
+        vendor: Fornecedor
+      service_order:
+        invoice_type: Tipo de Documento
+        deadline_date: Prazo de Entrega
+        name: Identificação
+        value: Valor Global
+        emission_date: Emissão da OS
+        execution_date: Data de Entrega
+        process_number: Número do Processo
+        comments: Observações
+        rating: Avaliação
+        rating_justification: Justificativa
+        contract: Instrumento
+        vendor: Fornecedor
+      accountability:
+        ug: Unidade Gestora
+        sector: Gerência
+        accountability_type: Atribuição
+        contract: Contratos
+        user: Servidor
+        document_type: Tipo de Documento
+        lore_date: Data de Ciência
+        supervisor_change: Observações
+        active: Fiscal Vigente
+      budget:
+        name: Número do Empenho
+        date: Data
+        value: Valor (R$)
+        contract: Número do Instrumento
+      contract:
+        contract_model: Modalidade de Licitação
+        contract_type: Instrumento Administrativo
+        name: Número do Instrumento
+        sign_date: Data de Assinatura
+        publication_date: Data de Publicação
+        activity: Atividade
+        expense_item: Natureza de Despesa
+        federal_account_source: Fonte de Despesa (Federal)
+        state_account_source: Fonte de Despesa (Estadual)
+        other_account_source: Fonte de Despesa (Superavit)
+        object: Objeto
+        requesting: Setor Solicitante
+        process_number: Número do Processo
+        start_value: Valor Inicial
+        continuum_service: Execução Contínua
+        start_date: Início da Vigência
+        finish_date: Fim da Vigência Inicial
+        last_finish_date: Fim da Vigência Prorrogada
+        observation: Observações
+        vendor: Fornecedor
+        contract: Contrato
+        object_type: Tipo de Objeto
+        amendment: Aditivos
+        additions: Apostilamentos
+        accountability: Responsáveis
+        fines: Multas
+        invoices: Medições
+        service_orders: Ordem de Serviços
+        notifications: Notificações
+        total_value: Valor Global Atual
+        reratifications: Rerratificações
+        terminations: Rescisões
+        closures: Encerramento
+        budgets: Empenhos
+        total_budget: Total Empenhado
+        total_executed: Total Executado
+        active: Vigente
+      vendor:
+        name: Nome
+        register_type: Tipo de Documento
+        register: Documento de Registro
+        invoices: Notas Fiscais
+        contracts: Contratos
+        warning: Alerta
+        service_orders: Ordens de Serviço
+      site:
+        name: Nome
+        subsecretary: Subsecretaria
+    models:
+      addition:
+        one: Apostilamento
+        other: Apostilamentos
+      amendment:
+        one: Aditivo
+        other: Aditivos
+      closure:
+        one: Encerramento
+        other: Encerramentos
+      fine:
+        one: Penalidade
+        other: Penalidades
+      notification:
+        one: Notificação
+        other: Notificações
+      reratification:
+        one: Rerratificação
+        other: Rerratificações
+      termination:
+        one: Rescisão
+        other: Rescisões
+      invoice:
+        one: Medição/Ordem de Serviço
+        other: Medições/Ordem de Serviços
+      accountability:
+        one: Responsável
+        other: Responsáveis
+      budget:
+        one: Empenho
+        other: Empenhos
+      contract:
+        one: Contrato
+        other: Contratos
+      invoice:
+        one: Medicão
+        other: Medições
+      user:
+        one: Usuário
+        other: Usuários
+      vendor:
+        one: Fornecedor
+        other: Fornecedores
+      site:
+        one: Unidade
+        other: Unidades
+      service_order:
+        one: Ordem de Serviço
+        other: Ordens de Serviço

@@ -1,0 +1,48 @@
+pt-BR:
+  admin:
+    actions:
+      import:
+        title:      Importar
+        menu:       Importar
+        breadcrumb: Importar
+        link:       Importar
+        bulk_link:  Importar
+        done:       Importado
+    import:
+      model_fields: Cmapos do Modelo
+      association_fields: Campos da associação
+
+      file:                   Arquivo de Dados
+      missing_file:           Por favor selecione um arquivo
+      format:                 Formato do Arquivo
+      invalid_format:         Formato do Arquivo Inválido
+      missing_update_lookup:  "O arquivo deve conter uma coluna com o campo de verificação que você selecionou"
+      invalid_json:           "O Arquivo JSON deve conter uma '%{root_key}' e o conjunto de dados"
+      update_if_exists:       Atualizar se Existente
+      update_lookup:          Campo chave para atualizaçào
+      mapping:                Mapeando
+      encoding:               Codificação
+      legend:
+        fields:   Campos a importar
+        upload:   Enviar Arquivo
+        mapping:  Mapeando campos selecionados
+      import_success:
+        create: "Criado %{name}"
+        update: "Atualizado %{name}"
+      import_error:
+        create: "Falha em criar %{name}: %{error}"
+        update: "Falha em atualizar %{name}: %{error}"
+        general: "Erro durante a atualização: %{error}"
+        old_import_hook: >
+          "La importación %{model}.%{method} debe tomar sólo un argumento.
+          La información no se importó correctamente.
+          Ve la sección de Actualizado en el archivo readme en Rails Admin Import."
+      association_not_found: "Asociación no encontrada. %{error}"
+      help:
+        model_fields: Os campos acima deve ser inclusos no arquivo de importação
+        association_fields: >
+          Estos campos empatarán con otras tablas en la base de datos, conforme a los atributos seleccionados abajo.
+          Para muchas asociaciones, tu deberás incluir múltiples columnas con el mismo encabezado en el archivo CSV.
+        update_if_exists: Actualizar registros encontrados con el campo de búsqueda de abajo en lugar de crear nuevos registros
+        file_limit: "Limite de %{limit} linhas por arquivo."
+        encoding:   Escolha um encoding, se nõa souber favor deixar em branco. Ignorado para JSON.

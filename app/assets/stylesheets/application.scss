@@ -1,0 +1,72 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar-brand {
+    float: left;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 75px;
+    width: auto;
+    color: white;
+
+    img {
+        display: block;
+        margin-top: -4px;
+        }
+}
+
+.jumbotron {
+    margin-top: 150px;
+    .container {
+        margin-top: 10px;
+    }
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+
+.navbar-blue {
+    background-color: #208BAA;
+    border-color: #000000;
+
+}
+
+.btn-green{
+    color: #fff;
+    background-color: #67ca67;
+    border-color: #ffffff;
+}
+
+.btn-pink {
+    color: #fff;
+    background-color: #c86673;
+    border-color: #ffffff;
+}
+
+
+.navbar-form.navbar-right {
+    margin-top: 10px;
+
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin input {
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+.form p {
+    text-align: justify;
+    font-size: small;
+    margin-top: 5px;
+}

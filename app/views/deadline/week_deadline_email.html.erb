@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= stylesheet_link_tag  "emails", :media => "all" %>
+  </head>
+  <body>
+    <h2>Olá <%= @user.name %>,</h2>
+    <p>As datas de vencimento dos contratos abaixo estão se aproximando.
+      É preciso desde logo analisar cada contrato e, se for o caso, iniciar sua renovação.</p>
+    <table>
+      <tr>
+        <th width="10%" >Contrato</th>
+        <th width="13%" >Intrumento</th>
+        <th width="10%" >Processo</th>
+        <th width="37%" >Empresa</th>
+        <th width="15%" >Vigência</th>
+        <th width="5%"  >Dias</th>
+        <th width="10%" >Ação</th>
+      </tr>
+    <% @accountabilities.each do |accountability| %>
+    <% tempo = (accountability.contract.finish_date - Time.now.to_date).to_i %>
+        <tr>
+          <td><%= accountability.contract.name %></td>
+          <td><%= accountability.contract.contract_type %></td>
+          <td><%= accountability.contract.process_number %></td>
+          <td><%= accountability.contract.vendor.name %></td>
+          <td><%= accountability.contract.finish_date %></td>
+          <td> <%= tempo %> </td>
+
+          <% if tempo >= 180 %>
+            <td><span class="label label-success">Analisar a Renovação</span></td>
+          <% elsif (tempo > 150 && tempo < 179) %>
+            <td><span class="label label-warning">Monitorar Renovação</span></td>
+          <% else %>
+            <td><span class="label label-important">Monitorar Renovação</span></td>
+          <% end %>
+        </tr>
+      <% end %>
+    </table>
+  </br>
+    <p>Fique atento as datas e não deixe para última hora!</p></br>
+    <p>Por favor não responda essa mensagem. Esse é um e-mail automático do Sistema de Contratos da SESA!
+       Para saber mais basta entrar em contato com o setor de contratos NECC por email (contratos@saude.es.gov.br) ou pelo telefone (27) 3333-3333  </p>
+  </body>
+</html>
